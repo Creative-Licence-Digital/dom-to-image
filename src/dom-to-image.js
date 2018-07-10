@@ -216,6 +216,8 @@
                     if (source.cssText) target.cssText = source.cssText;
                     else copyProperties(source, target);
 
+                    target.fontStretch = 'normal';
+
                     function copyProperties(source, target) {
                         util.asArray(source).forEach(function (name) {
                             target.setProperty(
